@@ -1,13 +1,18 @@
 import styles from './masterpieces.module.css'
 import { masterpieces } from '@/data/masterpieces'
 import Link from 'next/link'
+import { AiOutlineArrowLeft } from "react-icons/ai"
 
 export default function Masterpieces() {
     return (
         <main className={styles.container}>
-            <Link href='/' className={styles.back}>
-                back
-            </Link>
+            <div className={styles.back}>
+                <AiOutlineArrowLeft />
+                <Link href='/' >
+                    back
+                </Link>
+            </div>
+
             <section className={styles.wrap}>
                 <h2 className={styles.title}>
                     Gallery for masterpieces of <span className={styles.eapm}>Eapm</span>
@@ -31,12 +36,12 @@ export default function Masterpieces() {
                                 <p className={styles.art_subtitle}>
                                     {masterpiece.description}
                                 </p>
-                                <p className={styles.comment}>
+                                <div className={styles.comment}>
                                     <i>"{masterpiece.comment}"</i>
                                     <div className={styles.by}>
                                         - {masterpiece.by}
                                     </div>
-                                </p>
+                                </div>
                             </div>
 
                         </div>

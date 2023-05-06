@@ -14,13 +14,13 @@ export const masterpieces = [
         description: "Recreating the famous building of Zaha Hadid, The Heydar Aliyev Center on desmos using over 900 equations.",
         image: "https://dsm01pap007files.storage.live.com/y4mRAgq4gXvmqSzSKLbJa_35e7AYuR5mMB3ZDM4OissQsvwsWAxfX-98VgHdVlwhSa5Xai1AddyY084Bsh7LW_4jxy4o_6C1MUyFqro6iAntLoO9_1CbQsLgx7N0o_ztfeszXtTuscPqS5NQOKNhYb__q6kKcPh9XcOSTLSbOxhWlFWwRms_CahSUa4IGeDhWPr?width=1536&height=960&cropmode=none",
         alt: 'Desmos masterpiece ><',
-        startDate: "2 Jan 2023",
+        startDate: "21 Feb",
         finishedDate: "3 May 2023",
         comment: "I HAVE NEVER SEEN A MORE TALENTED INDIVIDUAL THAN THIS PRODIGY EAPM RIGHT HERE. I MEAN WHO IS ABLE TO CREATE SUCH A MASTERPIECE USING ONLY EQUATIONS??? JUST LOOK AT THOSE DETAILSSS. I JUST CANT. SPEECHLESS.",
         by: "ur lulu ^^"
     },
     {
-        title: "First project on exterior landscaping",
+        title: "Eapm's eu soat landscaping",
         description: "First project on exterior landscaping.",
         image: "https://dsm01pap007files.storage.live.com/y4myOuSouR_fROn1GJnXXPXIh0FgMB-1I7jPJk8gyBZjAZoTu_V1gfc6y8v8GE2cBzOV78mgpX45RqK1a4sCpfUePlFYiXeBIhBbLCZU4X_7mhNM28uGyuBHorg2qMrnc3zl7P4fF1ofGINqw3PwdaVjRS9PYk8TH5_MRIb6ZUZb4_Qocj6xxH1P0kBLsbkAer0?width=1280&height=960&cropmode=none",
         alt: 'Landscape masterpiece ><',
