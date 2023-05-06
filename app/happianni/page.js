@@ -1,10 +1,17 @@
 import styles from './happianni.module.css'
 import Image from 'next/image'
-import { AiFillHeart } from "react-icons/ai"
+import { AiFillHeart, AiOutlineArrowLeft } from "react-icons/ai"
+import Link from 'next/link'
 
 export default function HappiAnni() {
     return (
         <main className={styles.container}>
+            <div className={styles.back}>
+                <AiOutlineArrowLeft />
+                <Link href='/' >
+                    back
+                </Link>
+            </div>
             <section className={styles.wrapper}>
                 <div className={styles.content}>
                     <h2 className={styles.title}>
