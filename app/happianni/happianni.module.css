@@ -68,3 +68,30 @@
 .anni {
     color: rgb(255, 114, 163);
 }
+
+@media screen and (max-width: 768px) {  
+    .content {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 80px;
+        margin-bottom: 30px;
+    }
+
+    .image {
+        max-width: 150px;
+        max-height: 180px;
+    }
+
+    .image:nth-child(1),
+    .image:nth-child(3) {
+        margin-left: 0px;
+    }
+    
+}
