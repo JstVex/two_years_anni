@@ -1,0 +1,355 @@
+.container {
+    
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+.back {
+    padding: 20px 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.firstsection {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.title {
+    color: rgb(253, 184, 196);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: rgb(38, 38, 38);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.downarrow {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 50px;
+}
+
+.secondsection {
+    padding: 0px 50px;
+    position: relative;
+    background-color: rgb(254, 237, 216);
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title2 {
+    color: rgb(202, 125, 0);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle2 {
+    color: rgb(38, 38, 38);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.images {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.first_img,
+.center_img,
+.last_img {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.center_img {
+    border-radius: 100px;
+}
+
+.thirdsection {
+    padding: 0px 50px;
+    position: relative;
+    background-color: rgb(228, 241, 255);
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title3 {
+    color: rgb(0, 128, 192);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle3 {
+    width: 80%;
+    color: rgb(38, 38, 38);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.head {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 100px;
+    left: 100px;
+}
+
+.body {
+    position: absolute;
+        border: 1px solid rgb(0, 17, 149);
+        border-radius: 25px;
+        top: 75px;
+        left: 450px;
+}
+
+.face {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 75px;
+    left: 750px;
+}
+
+.inside {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 75px;
+    left: 1100px;
+}
+
+.hand {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 475px;
+    left: 100px;
+}
+
+.thigh {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 475px;
+    left: 450px;
+}
+
+.arm {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 475px;
+    left: 750px;
+}
+
+.tail {
+    position: absolute;
+    border: 1px solid rgb(0, 17, 149);
+    border-radius: 25px;
+    top: 475px;
+    left: 1100px;
+}
+
+.catrac_img {
+    z-index: 2;
+    opacity: 0;
+    border-radius: 25px;
+    width: auto;
+        height: auto;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        transition: all 500ms;
+}
+
+.catrac_img:hover {
+    opacity: 1;
+}
+
+.catrac_text {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: rgb(0, 0, 0);
+    transition: all 500ms;
+}
+
+.catrac_text_face {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    color: rgb(0, 0, 0);
+    transition: all 500ms;
+}
+
+.catrac_text_atwinnthrr {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    color: rgb(0, 0, 0);
+    transition: all 500ms;
+}
+
+.catrac_img:hover > .catrac_text{
+    opacity: 0;
+}
+
+.forthsection {
+    padding: 0px 50px;
+    position: relative;
+    background-color: rgb(228, 255, 223);
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title4 {
+    color: rgb(4, 134, 0);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle4 {
+    width: 80%;
+    color: rgb(38, 38, 38);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.garden1,
+.garden2,
+.garden3,
+.garden4 {
+    position: absolute;
+    border-radius: 15px;
+    width: auto;
+    border: 1px solid green;
+        height: auto;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+}
+
+.garden1 {
+    top: 20px;
+    left: 20px;
+}
+
+.garden2 {
+    top: 20px;
+    right: 20px;
+}
+
+.garden3 {
+    bottom: 20px;
+    left: 20px;
+}
+
+.garden4 {
+    bottom: 20px;
+    right: 20px;
+}
+
+.fifthsection {
+    padding: 0px 50px;
+    position: relative;
+    background-color: rgb(254, 230, 255);
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title5 {
+    color: rgb(254, 76, 192);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle5 {
+    width: 80%;
+    color: rgb(38, 38, 38);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.sleep1,
+.sleep2,
+.sleep3,
+.sleep4 {
+    position: absolute;
+    border-radius: 15px;
+    width: auto;
+    border: 1px solid rgb(159, 26, 119);
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.sleep1 {
+    top: 50px;
+    left: 250px;
+}
+
+.sleep2 {
+    top: 55px;
+    right: 250px;
+    border-radius: 1000px;
+}
+
+.sleep3 {
+    top: 450px;
+    left: 250px;
+    border-radius: 1000px;
+}
+
+.sleep4 {
+    top: 450px;
+    right: 250px;
+}
