@@ -25,10 +25,15 @@ export default function Masterpieces() {
                 {masterpieces.map((masterpiece) => {
                     return (
                         <div key={masterpiece.title} className={styles.masterpiece}>
-                            <img src={masterpiece.image} alt="" className={styles.image} />
+                            <div className={styles.img_holder}>
+                                <img src={masterpiece.image} alt="" className={styles.image} />
+                            </div>
+
                             <div className={styles.content}>
                                 <div className={styles.date}>
-                                    {masterpiece.startDate} - {masterpiece.finishedDate}
+                                    {masterpiece.finishedDate ? `${masterpiece.startDate} - ${masterpiece.finishedDate}` : `${masterpiece.startDate}`
+                                    }
+
                                 </div>
                                 <div className={styles.art_title}>
                                     {masterpiece.title}
