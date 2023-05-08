@@ -15,6 +15,7 @@
 .title {
     font-size: 2.8rem;
     margin-bottom: 0;
+    margin-top: 50px;
 }
 
 .color {
@@ -35,130 +36,131 @@
 
 .memory {
     margin: 40px 120px 40px 120px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    column-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
 }
 
-.images {
+.content {
+    margin-top: 100px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.content_right {
+    margin-top: 150px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.images,
+.images_left {
+    width: 300px;
+    height: 500px;
     position: relative;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
 .image1 {
     z-index: 0;
-    position: absolute;
     top: 0;
     left: 0;
-    width: auto;
-    height: auto;
     max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
 }
 
 .image2 {
     z-index: 3;
-    position: absolute;
     top: 110px;
     left: 80px;
-    width: auto;
-    height: auto;
-    max-width: 400px;
+    max-width: 300px;
     max-height: 300px;
-    object-fit: cover;
 }
 
 .image3 {
     z-index: 0;
-    position: absolute;
-    width: auto;
-    height: auto;
     top: 300px;
     left: 0;
     max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
 }
 
 .image4 {
     z-index: 0;
-    position: absolute;
     top: 0;
-    right: 150px;
-    width: auto;
-    height: auto;
+    right: 0px;
     max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
 }
 
 .image5 {
     z-index: 3;
-    position: absolute;
     top: 110px;
-    right: 250px;
-    width: auto;
-    height: auto;
-    max-width: 400px;
+    right: 80px;
+    max-width: 300px;
     max-height: 300px;
-    object-fit: cover;
 }
 
 .image6 {
     z-index: 0;
-    position: absolute;
-    width: auto;
-    height: auto;
     top: 300px;
-    right: 150px;
+    right: 0px;
     max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
-}
-
-.content {
-    text-align: center;
-    margin: auto 0px;
-    margin-left: 450px;
 }
 
 .content_title {
-    font-size: 1.5rem;
-    width: 75%;
-}
-
-.content_title2 {
-    font-size: 1.5rem;
-    width: 65%;
+    font-weight: 500;
+    color: rgb(253, 184, 196);
+    font-size: 1.8rem;
 }
 
 .para {
     color: rgb(40, 40, 40);
-    line-height: 1.5rem;
-    width: 75%;
+    line-height: 1.8rem;
 }
 
-.para2 {
-    color: rgb(40, 40, 40);
-        line-height: 1.5rem;
-        width: 65%;
+@media screen and (max-width: 1200px) {
+    .memory {
+        margin: 40px 100px 100px 100px;
+        grid-template-rows: repeat(auto);
+        row-gap: 0px;
+    }
+
+    .images,
+    .images_left {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 auto;
+    }
+
+    .images_left {
+        order: -1;
+    }
+    
+    .content,
+    .content_right {
+        margin-top: 50px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
 
-.memory2 {
-    margin: 40px 0px 40px 80px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-.images2 {
-    position: relative;
-    margin-right: 0px;
-   
-}
-
-.content2 {
-    text-align: center;
-    margin: auto 200px auto 0;
+@media screen and (max-width: 600px) {
+    .memory {
+        margin: 40px 40px 100px 40px;
+    }
 }
