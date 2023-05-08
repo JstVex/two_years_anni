@@ -43,6 +43,10 @@
     padding-left: 30px;
 }
 
+.img_holder {
+    width: 400px;
+}
+
 .image {
     width: auto;
     height: auto;
